@@ -172,7 +172,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -182,7 +182,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -235,6 +235,111 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/30/U盘安装Ubuntu系统/" itemprop="url">
+                  U盘安装系统到笔记本
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-30T15:15:08+08:00" content="2016-08-30">
+              2016-08-30
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="U盘安装系统到笔记本"><a href="#U盘安装系统到笔记本" class="headerlink" title="U盘安装系统到笔记本"></a>U盘安装系统到笔记本</h1><ol>
+<li><p>使用UtralIOS（软碟通）写入硬盘映像把ubuntu系统刻录到u盘</p>
+</li>
+<li><p>在刻录界面那里选择 便捷启动-&gt;写入新的驱动器引导扇区 -&gt; Syslinux</p>
+</li>
+<li><p>设置笔记本从U盘启动</p>
+</li>
+</ol>
+<p>结果启动后出现了下面的错误</p>
+<pre><code>SYSLINUX 3.84 2009-12-18 EBIOS Copyright c 1994-2009 H.Peter Anvin et al
+</code></pre><p>然后看到网上的办法是进入到U盘，找到syslinux.cfg文件，然后把default vesamenu.c32一整行都删除掉，然后保存修改</p>
+<p>重新插入到笔记本并且从U盘启动，然后神奇的ok了，这是个什么鬼。。。。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/30/测试/" itemprop="url">
                   测试
                 </a>
@@ -248,7 +353,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-08-30T15:04:58+08:00" content="2016-08-30">
               2016-08-30
             </time>
@@ -342,7 +447,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-08-30T14:17:52+08:00" content="2016-08-30">
               2016-08-30
             </time>
@@ -451,8 +556,8 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -499,7 +604,7 @@
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
