@@ -84,12 +84,36 @@
 
 
 
-<meta property="og:type" content="website">
+<meta name="description" content="#卡尔曼滤波
+相关文章：
+卡尔曼滤波 – 从推导到应用(一)
+卡尔曼滤波 – 从推导到应用(二)
+新手平衡小车的卡尔曼滤波算法总结.doc
+##关于卡尔曼滤波和粒子滤波最直白的解释
+卡尔曼滤波本来是控制系统课上学的，当时就没学明白，也蒙混过关了，以为以后也不用再见到它了，可惜没这么容易，后来学计算机视觉和图像处理，发现用它的地方更多了，没办法的时候只好耐心学习和理解了。一直很想把学习的过程记录一下">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Salmon">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/08/30/卡尔曼滤波/index.html">
 <meta property="og:site_name" content="Salmon">
+<meta property="og:description" content="#卡尔曼滤波
+相关文章：
+卡尔曼滤波 – 从推导到应用(一)
+卡尔曼滤波 – 从推导到应用(二)
+新手平衡小车的卡尔曼滤波算法总结.doc
+##关于卡尔曼滤波和粒子滤波最直白的解释
+卡尔曼滤波本来是控制系统课上学的，当时就没学明白，也蒙混过关了，以为以后也不用再见到它了，可惜没这么容易，后来学计算机视觉和图像处理，发现用它的地方更多了，没办法的时候只好耐心学习和理解了。一直很想把学习的过程记录一下">
+<meta property="og:image" content="http://yoursite.com/.\Res\卡尔曼滤波个人总结.png">
+<meta property="og:updated_time" content="2016-08-30T01:59:55.994Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Salmon">
+<meta name="twitter:description" content="#卡尔曼滤波
+相关文章：
+卡尔曼滤波 – 从推导到应用(一)
+卡尔曼滤波 – 从推导到应用(二)
+新手平衡小车的卡尔曼滤波算法总结.doc
+##关于卡尔曼滤波和粒子滤波最直白的解释
+卡尔曼滤波本来是控制系统课上学的，当时就没学明白，也蒙混过关了，以为以后也不用再见到它了，可惜没这么容易，后来学计算机视觉和图像处理，发现用它的地方更多了，没办法的时候只好耐心学习和理解了。一直很想把学习的过程记录一下">
+<meta name="twitter:image" content="http://yoursite.com/.\Res\卡尔曼滤波个人总结.png">
 
 
 
@@ -110,9 +134,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/08/30/卡尔曼滤波/"/>
 
-  <title> Salmon </title>
+  <title>  | Salmon </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +157,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,9 +244,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -245,9 +267,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/30/卡尔曼滤波/" itemprop="url">
-                  未命名
-                </a>
               
             
           </h1>
@@ -287,9 +306,7 @@
       
 
       
-        
-          
-            <p>#卡尔曼滤波</p>
+        <p>#卡尔曼滤波</p>
 <p>相关文章：</p>
 <p><a href="http://blog.csdn.net/heyijia0327/article/details/17487467" target="_blank" rel="external">卡尔曼滤波 – 从推导到应用(一)</a></p>
 <p><a href="http://blog.csdn.net/heyijia0327/article/details/17667341" target="_blank" rel="external">卡尔曼滤波 – 从推导到应用(二)</a></p>
@@ -312,16 +329,20 @@
 <p>其中最浓缩的观点就是卡尔曼滤波就是用来做测量的。普通可以精确测量的东西当然是用不上卡尔曼滤波的。</p>
 <p>卡尔曼滤波是用于测量无法直接通过工具精确测量的量，比如某个量在实际当中一直受到干扰，或者有无法避免的误差。卡尔曼滤波就是为了测量(估计)出一个最优（最接近真实值）的结果。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -329,121 +350,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/08/30/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/08/30/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-30T14:17:52+08:00" content="2016-08-30">
-              2016-08-30
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -451,6 +383,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -470,8 +406,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.png"
@@ -507,6 +452,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -610,6 +566,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
